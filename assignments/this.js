@@ -26,9 +26,34 @@ car.carInfo();
 // code example for Implicit Binding
 
 // Principle 3
+function PowerRanger(dinosaur) {
+    this.say = "It's Morphin time!... ";
+    this.dinosaur = dinosaur;
+    this.speak = function() {
+        console.log(this.say + this.dinosaur);
+    };
+}
+
+const tyranosaurus = new PowerRanger('TYRANOSAURUS!')
+
+tyranosaurus.speak();
 
 // code example for New Binding
 
 // Principle 4
+let object1 = {
+    color: 'Red'
+}
+
+let object2 = {
+    color: 'Green'
+}
+
+function logThis() {
+    console.log("'This' = ", this);
+}
+
+logThis.call(object1);
+logThis.call(object2);
 
 // code example for Explicit Binding
