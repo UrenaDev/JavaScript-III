@@ -34,9 +34,9 @@ function PowerRanger(dinosaur) {
     };
 }
 
-const tyranosaurus = new PowerRanger('TYRANOSAURUS!')
+const Jason = new PowerRanger('TYRANOSAURUS!')
 
-tyranosaurus.speak();
+Jason.speak();
 
 // code example for New Binding
 
